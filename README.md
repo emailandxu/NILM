@@ -7,6 +7,11 @@
 python3 -m nilm.cp.main
 ```
 
+## Neural Network
+```bash
+python3 -m nilm.nn.main
+```
+
 ## Dataset tree view
 
 ```
@@ -26,6 +31,7 @@ dataset
 │   ├── low_freq.tar.bz2
 │   └── readme.txt
 └── ukdale
+    ├── UKData
     ├── ukdale.h5
     └── ukdale.h5.tgz
 ```
