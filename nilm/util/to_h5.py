@@ -1,11 +1,12 @@
 from nilmtk.dataset_converters import convert_redd
 from pathlib import Path
+import sys
 # import argparse  # to do add argparse
 
 
 def to_h5(source=None, dest=None):
     if not source:
-        lowfreq_root = Path("../dataset").joinpath("low_freq/")
+        lowfreq_root = Path("dataset/redd/").joinpath("low_freq/")
         source_dir: Path = lowfreq_root.absolute()
     else:
         source_dir = Path(source)
@@ -21,4 +22,5 @@ def to_h5(source=None, dest=None):
 
 
 if __name__ == "__main__":
-    to_h5()
+    src, dest = sys.argv[1], sys.argv[2]
+    to_h5(src, dest)
