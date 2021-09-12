@@ -1,3 +1,4 @@
 dataset/
 nilmenv/
 *.pyc
+.ipynb_checkpoints/
