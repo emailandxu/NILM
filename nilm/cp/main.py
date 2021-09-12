@@ -17,8 +17,8 @@ warnings.filterwarnings('ignore')
 rcParams['figure.figsize'] = (13, 6)
 
 
-train = DataSet('../dataset/low_freq/redd_low.h5')  # 读取数据集
-test = DataSet('../dataset/low_freq/redd_low.h5')  # 读取数据集
+train = DataSet('dataset/redd/low_freq/redd_low.h5')  # 读取数据集
+test = DataSet('dataset/redd/low_freq/redd_low.h5')  # 读取数据集
 building = 1  # 选择家庭house
 train.set_window(end="30-4-2011")  # 划分数据集，2011年4月30号之前的作为训练集
 test.set_window(start="1-5-2011")  # 五月1号之后的作为测试集
