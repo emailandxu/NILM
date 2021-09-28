@@ -1,4 +1,9 @@
 
+## convert to h5
+```bash
+python3 -m nilm.util dataset/redd low_freq
+```
+
 
 ## Combinational Optimization
 
@@ -19,7 +24,6 @@ dataset
 ├── redd
 │   ├── high_freq_raw.tar
 │   ├── high_freq.tar.bz2
-│   ├── Kami Export - kolter-kddsust11.pdf
 │   ├── low_freq
 │   │   ├── house_1
 │   │   ├── house_2
